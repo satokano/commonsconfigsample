@@ -9,6 +9,11 @@ repositories {
 
 dependencies {
     implementation 'org.apache.commons:commons-configuration2:2.6'
+    
+    // builderとか使うときに必要だが芋蔓してくれない
+    // https://commons.apache.org/proper/commons-configuration/dependencies.html
+    implementation 'commons-beanutils:commons-beanutils:1.9.4'
+    
     testImplementation 'org.junit.jupiter:junit-jupiter:5.5.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
     testImplementation 'org.assertj:assertj-core:3.11.1'
